@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #042f2d;
+    --background: #ecfefd;
+    --on-background: #f2fefe;
+    --primary: #2ee0da;
+    --secondary: #c3f9f8;
+    --accent: #3b3bab;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #d0fbf9;
+    --background: #011312;
+    --primary: #1fd1cb;
+    --secondary: #063c3b;
+    --accent: #5454c4;
+  }
+}
+
+html {
+  background-image: linear-gradient(var(--on-background) 1px, transparent 1px),
+    linear-gradient(to right, var(--on-background) 1px, transparent 1px);
+  background-size: 1rem 1rem;
+  background-color: var(--background);
+}
