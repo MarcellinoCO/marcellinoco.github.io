@@ -23,19 +23,28 @@
 
   <body>
     <nav>
-      <a>Hello</a>
-      <a>About</a>
-      <a>Work</a>
-      <a>Blog</a>
-      <a>Contact</a>
+      <a data-active="true">Hello</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/work.html">Work</a>
+      <a href="/pages/blog.html">Blog</a>
+      <a href="/pages/contact.html">Contact</a>
     </nav>
 
-    <section>
-      <h1>Hi, I'm Marcellino.<br />A Software Engineer.</h1>
-      <p>I'm passionate about creating unique and creative designs to life</p>
-    
-      <a>See my projects</a>
-      <a>More about me</a>
+    <section id="hello" class="container">
+      <h1>
+        Hi, I'm <span class="gradient">Marcellino</span>. <br />
+        A Software Engineer.
+      </h1>
+
+      <p>
+        I'm passionate about creating <i>unique</i> <br />
+        and <i>creative</i> designs to life
+      </p>
+
+      <div class="links">
+        <a href="/pages/work.html">see my projects <span>⇒</span></a>
+        <a href="/pages/about.html">more about me <span>⇒</span></a>
+      </div>
     </section>
   </body>
 </html>
