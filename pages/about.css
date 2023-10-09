@@ -1,0 +1,137 @@
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* ================ */
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(120deg, rgb(var(--primary)), rgb(var(--accent)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================ */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+    column-gap: 6rem;
+  }
+}
+
+/* ================ */
+img.profile {
+  margin: 0 auto;
+  width: 90%;
+  aspect-ratio: 1/1;
+
+  object-fit: contain;
+  object-position: bottom;
+  background-color: white;
+
+  box-sizing: content-box;
+  border-bottom: 3rem solid rgb(var(--accent));
+  border-radius: 8rem 8rem 2rem 2rem;
+  /* border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem; */
+
+  transform: translateY(0rem) rotate(-5deg) rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  img.profile {
+    width: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+}
+
+/* ================ */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    align-items: start;
+  }
+}
+
+.intro h2 {
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro h2 {
+    text-align: left;
+  }
+}
+
+.intro p {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro p {
+    text-align: left;
+  }
+}
+
+/* ================ */
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .socials {
+    align-items: start;
+  }
+}
+
+.socials p {
+  font-size: 1rem;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+@media (hover: hover) {
+  .socials-list a:hover {
+    transform: translateY(-1px) scale(1.05);
+  }
+}
